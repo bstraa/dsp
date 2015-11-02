@@ -31,7 +31,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
-I decided to use vim because it is the industry standard and has good tutorials.  Usability and universality seem important with software.
+I decided to use vim because it is the industry standard and has good tutorials.  I've also noticed a lot of extremely good programmers on quora tend to recommend using it.  Usability, flexibility universality seem important with software.  Vim fits the mold.
 
 ---
 
@@ -61,6 +61,6 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
-I chose both vim and pycharm.  I'm familar with pycharm and like it; however, I'd also like to experiment in depth with vim, as it would be helpful to have matching terminal editors and graphical editors.  
+I chose both vim and pycharm.  I'm familar with pycharm and like it; however, I'd also like to experiment in depth with vim, as it would be helpful to have matching terminal editors and graphical editors.  Additionally, it's worth mastering something thats potentially far superior and helps you learn more.
 
 ---
