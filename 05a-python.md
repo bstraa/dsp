@@ -26,15 +26,19 @@ Lists differ from sets in that sets contain unique data types (no duplicates), a
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+'lambda' is a fancy word for 'function'.  When we use lambda, we can apply a function to another function.  For example:
 
+a = ['alpha', 'beta', 'Theta']
+sorted(a) returns ['Theta', 'alpha', 'beta']
+
+sorted(a, key=lambda word: word.lower()) returns ['alpha', 'beta', 'Theta']
+
+In the previous pseudocode, we are applying a function to our list before it is sorted so that it is sorted with disregard to uppercase.
 ---
 
 ###Q4. List Comprehension, Map &amp; Filter
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
-
->> REPLACE THIS TEXT WITH YOUR RESPONSE
 
 ---
 
