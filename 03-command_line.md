@@ -52,6 +52,7 @@ What does `xargs` do? Give an example of how to use it.
 'xargs' provides arguments which are needed for some command line commands like 'cp' and 'echo'.  Also, some programs need arguments instead of STDIN.  Unfortunately, standard input streams do not work with every argument so 'xargs' are needed.  Furthermore, an increasingly important and common reason for 'xargs' is that it can parallel process jobs.  An example of how to us it is as follows:
 
 touch file1.txt
+
 echo file1.txt | xargs touch
 
 These two command line inputs do exactly the same thing.  Touch creates a new empty file named file1.txt.  Echo prints file1.txt as it is taken as an input to the arguement 'touch'.  Essentially, these are two ways of doing the same thing and it shows how 'xargs' is used.
