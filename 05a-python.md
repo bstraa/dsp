@@ -12,16 +12,14 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+Lists and tuples are similar because they are both data structures and can be composed of ANY data type - strings, ints, etc.  However, they differ because tuples are immutable - they cannot be changed.  Whereas, lists are mutable - they can be changed.  Tuples will work as keys in dictionaries (lists won't work!) because by definition, the keys in the dictionary are immutable.  Mutable data types cannot be dictionary keys (they can be values, though).
 ---
 
 ###Q2. Lists &amp; Sets
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+Lists differ from sets in that sets contain unique data types (no duplicates), and lists can contain duplicates.  Furthermore, lists maintain order, whereas sets do not.  A good example of using sets would be checking to see if a person has visited a website or not.  Sets provide mapping and are very fast at answering yes/no questions.  A good example of using lists would be determining the number of times someone has visited a website.  Sets provide o(1) lookup where lists are o(n).  Therefore, sets are MUCH faster at answering yes/no questions; however, they are limited in their flexibility in answering questions.
 ---
 
 ###Q3. Lambda Function
