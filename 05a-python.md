@@ -40,6 +40,7 @@ In the previous pseudocode, we are applying a function to our list before it is 
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
+
 ---
 
 ###Complete the following problems by editing the files below:
