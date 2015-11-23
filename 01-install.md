@@ -37,7 +37,7 @@ import sklearn
 
 Did you install Python 2 or 3? Why? How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
-Python 2 because Python 3 has yet to be fully implemented.  Python 2.7 also includes many commands found in Python 3 such as the change from 'print x' to 'print(x)'.  You can check the version of python by typing in 'python --version' at the terminal.
+I installed Python 2 because you can still use much of Python 3 code and Python 2 is still more universally used.  I wanted to make sure to understand the new changes to Python 3 without having to sacrifice knowledge of Python 2.  You can check the version by typing 'python --version' in the terminal.
 
 ---
 
