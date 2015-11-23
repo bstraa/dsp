@@ -30,7 +30,12 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 ---
 
 What terminal editor will you use? How did you make your decision?
-I chose to use VIM primarily; because it is simple, fast, and universal.  Once I'm over the learning curve it will be easier; it seems like the best long-term decision.
+
+I will use the emacs terminal editor.  I made my decision by deciding that it was best to choose between emacs and vim.  I really like their speed and universality.  Specifically, it is complementary to use them with their appropriate graphical editor.
+
+I chose emacs over vim ultimately because I disliked the different modes in vim.  
+
+
 ---
 
 
@@ -59,6 +64,10 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
-I chose both vim and pycharm.  I'm familar with pycharm and like it; however, I'd also like to experiment in depth with vim, as it would be helpful to have matching terminal editors and graphical editors.  Additionally, it's worth mastering something thats potentially far superior and helps you learn more.
+I chose Emacs because it made the most sense after choosing it for my terminal editor.  I think the most interesting features are those of which are generally implemented combinatorically.
+
+For example, deleting one character, regardless if its the next or previous character relative to the cursor, is quite simple, easy, expected, and relatively uninteresting.  However, the truly interesting features seem to combine an action (such as deleting) with specific quantative and directional specifications such as killing the next 12 lines after the cursor.  This would be implemented by pressing 'C-u 12 C-k'.
+
+Customization can be done by creating a customization buffer where you can alter your settings.  To do this, press 'M-x' then type 'customize'.
 
 ---
