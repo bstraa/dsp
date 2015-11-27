@@ -1,6 +1,8 @@
 # Based on materials copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
 
+from sys import argv
+
 
 def donuts(count):
     """
@@ -18,7 +20,12 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    if count < 10:
+        print('Number of donuts: {}'.format(count))
+    elif count >= 10:
+        print('Number of donuts: many')
+    else:
+        raise NotImplementedError
 
 
 def both_ends(s):
@@ -37,6 +44,10 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
+    if len(s) < 2:
+        return ''
+    else:
+        return s[:2] + s[-2:]
     raise NotImplementedError
 
 
@@ -56,7 +67,12 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    first_letter = s[0]
+    for char in s:
+        if char == first_letter:
+            s = first_letter + s[1:].replace(char, '*')
+    return s
+   # raise NotImplementedError
 
 
 def mix_up(a, b):
@@ -74,7 +90,9 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    return  a.replace(a[0:2], b[0:2]) + ' ' + b.replace(b[0:2], a[0:2])
+    
+   # raise NotImplementedError
 
 
 def verbing(s):
@@ -91,7 +109,15 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    if len(s) >= 3 and s[-3:] != 'ing':
+        s += 'ing'
+    elif len(s) >= 3 and s[-3:] == 'ing':
+        s += 'ly'
+    if len(s) < 3:
+        return s
+    return s
+    
+    #raise NotImplementedError
 
 
 def not_bad(s):
@@ -111,7 +137,19 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    s = s.split()
+    not_index = s.index('not')
+    bad_index = s.index('bad')
+    if bad_index > not_index:
+        del s[not_index:bad_index+1]
+        s.insert(not_index, 'good')
+        s = ' '.join(s)
+        return s
+    else:
+        return ' '.join(s)
+        
+        
+    #raise NotImplementedError
 
 
 def front_back(a, b):
@@ -130,4 +168,30 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    a_len = len(a)
+    b_len = len(b)
+    if len(a) % 2 == 0:
+        a_front = a[:len(a)/2]
+        a_back = a[len(a)/2:]
+    elif len(a) % 2 != 0:
+        a_front = a[:(len(a)/2)+1]
+        a_back = a[(len(a)/2+1):]
+    if len(b) % 2 == 0:
+        b_front = b[:len(b)/2]
+        b_back = b[len(b)/2:]
+    elif len(b) % 2 != 0:
+        b_front = b[:(len(b)/2)+1]
+        b_back = b[(len(b)/2+1):]
+
+    return a_front + b_front + a_back + b_back
+    
+    #raise NotImplementedError
+
+def main():
+    s = str('It\'s bad yet not')
+    a = 'Kitten'
+    b = 'Donut'
+    print(front_back(a, b))
+
+if __name__ == '__main__':
+    main()

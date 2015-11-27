@@ -26,7 +26,7 @@ Lists differ from sets in that sets contain unique data types (no duplicates), a
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
-'lambda' is a fancy word for 'function'.  When we use lambda, we can apply a function to another function.  For example:
+'lambda' is another word for 'function'.  When we use lambda, we can apply a function to another function.  For example:
 
 a = ['alpha', 'beta', 'Theta']
 sorted(a) returns ['Theta', 'alpha', 'beta']
@@ -39,6 +39,39 @@ In the previous pseudocode, we are applying a function to our list before it is 
 ###Q4. List Comprehension, Map &amp; Filter
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
+
+List comprehensions are the most Pythonic way to create a list through iteration.  Although, lists can be created using iteration without list comprehensions, they are slow and less efficient and not Pythonic.  An example of a 'map' using a list comprehension follows:
+
+y = [x for x in range(0, 10)]
+
+Without a list comprehension:
+
+y = []
+z = range(0, 10)
+for zz in z:
+    y.append(zz)
+
+An example of a list comprehension using 'filter' follows:
+
+y = [x for x in range(0,10) if x%2 == 0]
+
+Without a list comprehension:
+
+y = []
+z = range(0, 10)
+for zz in z:
+    if zz%2 == 0:
+       y.append(zz)
+
+It is also possible to do dictionary comprehensions; however, because dictionaries are a different data type than lists, they are more limited.  An example follows:
+
+d = {x: x**2 for x in range(0, 5)}
+
+The same principle applies to set comprehensions, but without key-value mappings, set comprehensions are a bit more simple.  Here is an example:
+
+d = {x for x in range(0, 5)}
+
+
 
 
 ---
@@ -54,7 +87,9 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> 937 days
+
+       
 
 b.  
 ```
@@ -62,7 +97,7 @@ date_start = '12312013'
 date_stop = '05282015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> 513 days
 
 c.  
 ```
@@ -70,7 +105,7 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE  
+>> 7580 days
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 

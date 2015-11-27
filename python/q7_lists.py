@@ -1,6 +1,7 @@
 # Based on materials copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
 
+from sys import argv
 
 def match_ends(words):
     """
@@ -15,7 +16,17 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
-    raise NotImplementedError
+    count = 0
+    for item in words:
+        if len(item) >= 2:
+            if item[0] == item[-1]:
+                count += 1
+            else:
+                continue
+    return count
+    
+    
+    # raise NotImplementedError
 
 
 def front_x(words):
@@ -32,7 +43,16 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    raise NotImplementedError
+    new_sorted = []
+    for word in words:
+        if word[0] != 'x':
+            new_sorted.append(word)
+    new_sorted = sorted(new_sorted)
+    for word in words:
+        if word[0] == 'x':
+            new_sorted.insert(0, word)
+    return new_sorted
+    #raise NotImplementedError
 
 
 def sort_last(tuples):
@@ -49,7 +69,10 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
-    raise NotImplementedError
+
+    return sorted(tuples, key=lambda x: (x[-1]))
+        
+    #raise NotImplementedError
 
 
 def remove_adjacent(nums):
@@ -68,7 +91,17 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
-    raise NotImplementedError
+    new_lst = []
+    for num in nums:
+        if len(new_lst) == 0:
+            new_lst.append(num)
+        if len(new_lst) >= 1 and num != new_lst[-1]:
+            new_lst.append(num)
+        else:
+            continue
+    return new_lst
+    
+    #raise NotImplementedError
 
 
 def linear_merge(list1, list2):
@@ -85,4 +118,19 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
-    raise NotImplementedError
+    
+    list1.extend(list2)
+    list1 = sorted(list1)
+    return list1
+
+    
+    
+   # raise NotImplementedError
+
+def main():
+    list1 = ['aa', 'aa']
+    list2 = ['aa', 'bb', 'bb']
+    print(linear_merge(list1, list2))
+
+if __name__ == '__main__':
+    main()
