@@ -11,7 +11,7 @@ It may sound silly, but [make sure](http://www.typingtest.com/) you know how to 
 A lot of your work will be done in a text editor. You have to know how to use your editor. Any editor will work, but knowing a powerful editor well will make you faster, more comfortable, and more effective.
 
 
-### Terminal Editor
+### Terminal Editor  
 
 Sometimes you will need to use a non-graphical text editor. This means an editor that will run entirely inside a terminal window, without spawning a new window, entirely without mouse input.
 
@@ -31,9 +31,8 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
-I will use the emacs terminal editor.  I made my decision by deciding that it was best to choose between emacs and vim.  I really like their speed and universality.  Specifically, it is complementary to use them with their appropriate graphical editor.
 
-I chose emacs over vim ultimately because I disliked the different modes in vim.  
+I will use emacs as a terminal editor.  I knew emacs and vim are universally used and have stood the test of time.  Also, it seems beneficial to have matching terminal and graphical editors.    Ultimately, after experimenting with both editors, I landed on emacs.  I really disliked how vim had three different modes.  
 
 
 ---
