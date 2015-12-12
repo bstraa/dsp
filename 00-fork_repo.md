@@ -9,7 +9,7 @@ Option 2:  _Intermediate:_ Edit files using GitHub pull/pull.  Follow "Set Up Re
 ## Step 1: Sign up for GitHub
 
 You will need a GitHub account.
-
+  
 It's easy and free to [sign up](https://github.com/join).
 
 
