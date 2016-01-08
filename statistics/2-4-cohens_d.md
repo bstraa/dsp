@@ -1,9 +1,11 @@
 [Think Stats Chapter 2 Exercise 4](http://greenteapress.com/thinkstats2/html/thinkstats2003.html#toc24) (Cohen's d)
 
 Problem:
+
 Investigate whether first babies are lighter or heavier than others.  Compute Cohen's D to quantify this difference.  How does this difference compare to difference in pregnancy length?
 
 Methodology and Solution (work shown is in MyWork2.4.ipynb):
+
 -Sorted 'birthord' and 'totalwgt_lb' columns after envoking 'value_counts()' on each.  Furthermore, 'birthord' was split into 'firsts' and 'others' to distinguish between first births and non-first births.  
 
 -Mean and variance was then calculated for both first births and non-first births.
