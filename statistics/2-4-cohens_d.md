@@ -13,7 +13,7 @@ Methodology and Solution:
 -Pooled variance was calculated and implented into the Cohen's D formula resulting in 0.08867 standard deviations; which is nearly three times larger than that of pregnancy length.  However, it is still very small.  As the book mentions, the difference in height for males and females is 1.7 standard deviations.
 
 Work shown below:
-`
+
 import nsfg
 
 import math
@@ -52,4 +52,4 @@ diff = firsts_mean - others_mean
 d = diff / math.sqrt(pooled_var)
 
 print('This is Cohens D: {} \n This is nearly 3x larger than the difference of .029 in pregnancy length'.format(d))
-`
+
